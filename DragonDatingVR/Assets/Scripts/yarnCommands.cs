@@ -28,6 +28,14 @@ public class yarnCommands : MonoBehaviour {
     public void ikein()
     {
         ike2 = Instantiate(ike);
+        if (brad2 != null)
+        {
+            Destroy(brad2);
+        }
+        if (laura2 != null)
+        {
+            Destroy(laura2);
+        }
         ike2.transform.SetParent(theCanvas.transform, false);
     }
     [YarnCommand("ikeout")]
@@ -37,7 +45,16 @@ public class yarnCommands : MonoBehaviour {
     }
     [YarnCommand("laurain")]
     public void laurain()
+
     {
+        if (brad2 != null)
+        {
+            Destroy(brad2);
+        }
+        if (ike2 != null)
+        {
+            Destroy(ike2);
+        }
         laura2 = Instantiate(laura);
         laura2.transform.SetParent(theCanvas.transform, false);
     }
@@ -49,6 +66,15 @@ public class yarnCommands : MonoBehaviour {
     [YarnCommand("bradin")]
     public void bradin()
     {
+
+        if (laura2 != null)
+        {
+            Destroy(laura2);
+        }
+        if (ike2 != null)
+        {
+            Destroy(ike2);
+        }
         brad2 = Instantiate(brad);
         brad2.transform.SetParent(theCanvas.transform, false);
     }
