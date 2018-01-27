@@ -7,6 +7,67 @@ position: 211,417
 Ike: Hey!
 Ike: Can you hear me?
 <<ikeout commandObject>>
+What are your preffered pronouns?
+[[He/him/his|Boy]]
+[[She/her/hers|Girl]]
+[[They/them/theirs|NB]]
+===
+
+title: Boy
+tags:
+colorID:
+positon:
+---
+<<set $boy to true>>
+<<set $girl to false>>
+<<laurain commandObject>>
+Laura: If he's scrolling through the text, he can clearly hear us.
+<<lauraout commandObject>>
+<<bradin commandObject>>
+Brad: Get with it, scrub.
+<<bradout commandObject>>
+<<ikein commandObject>>
+Ike: Dude...do you really think I'm a scrub?
+<<ikeout commandObject>>
+<<laurain commandObject>>
+Laura: Oh my god, this was literally just to test dialogue.
+Laura: Now there's drama involved.
+Laura: I'm stopping this before it's too late.
+<<lauraout commandObject>>
+[[Test the thing|TestThing]]
+===
+
+title: Girl
+tags:
+colorID:
+position:
+---
+<<set $boy to false>>
+<<set $girl to true>>
+<<laurain commandObject>>
+Laura: If she's scrolling through the text, she can clearly hear us.
+<<lauraout commandObject>>
+<<bradin commandObject>>
+Brad: Get with it, scrub.
+<<bradout commandObject>>
+<<ikein commandObject>>
+Ike: Dude...do you really think I'm a scrub?
+<<ikeout commandObject>>
+<<laurain commandObject>>
+Laura: Oh my god, this was literally just to test dialogue.
+Laura: Now there's drama involved.
+Laura: I'm stopping this before it's too late.
+<<lauraout commandObject>>
+[[Test the thing|TestThing]]
+===
+
+title: NB
+tags:
+colorID:
+position:
+---
+<<set $boy to false>>
+<<set $girl to false>>
 <<laurain commandObject>>
 Laura: If they're scrolling through the text, they can clearly hear us.
 <<lauraout commandObject>>
@@ -21,4 +82,16 @@ Laura: Oh my god, this was literally just to test dialogue.
 Laura: Now there's drama involved.
 Laura: I'm stopping this before it's too late.
 <<lauraout commandObject>>
+[[Test the thing|TestThing]]
+===
+
+title: TestThing
+tags:
+colorID:
+position:
+---
+<<if $boy is true and $girl is false>>
+	Your preffered pronouns must be he/him/his!
+	I'm an all knowing computer, binch.
+<<endif>>
 ===
