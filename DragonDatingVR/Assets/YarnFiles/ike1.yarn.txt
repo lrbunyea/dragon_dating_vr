@@ -312,6 +312,7 @@ Laura: I'm serious about my friends, okay?
 Laura decides that she can spare one more study day. She calls Tiki Port, your favorite restaurant, and orders in.
 She rents The Band of Justice Bros on demand, even though she despises superhero films. She knows you love them.
 She calls Ike and the three of you sit on the sofa in comfortable silence.
+This is nice.
 <<lauraout commandObject>>
 <<sceneLoader commandObject theEnd>>
 ===
