@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/titleScreen.unity
+    guid: 2eb7699dc0038474b883bcb6b2d43255
+  - enabled: 1
     path: Assets/Scenes/ikeGarage1.unity
     guid: ff9923ce1d0b8e642a327b856ae6adbf
   - enabled: 1
