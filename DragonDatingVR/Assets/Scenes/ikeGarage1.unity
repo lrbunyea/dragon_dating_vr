@@ -886,7 +886,7 @@ MonoBehaviour:
   dialogueContainer: {fileID: 331833072}
   lineText: {fileID: 1237243837}
   continuePrompt: {fileID: 0}
-  textSpeed: 0.001
+  textSpeed: 0.0001
   optionButtons:
   - {fileID: 227609651}
   - {fileID: 864286233}
