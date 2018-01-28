@@ -1,0 +1,85 @@
+title: ikeFodder
+tags:
+colorID:
+position:
+---
+<<ikein commandObject>>
+Ike: Oh geez...
+Ike: Being on camera is so nerve racking.
+Ike: Ahhhh!
+Ike: What do I say???
+Ike: I don't know!
+<<ikeout commandObject>>
+<<sceneLoader commandObject rhythmHowTo>>
+===
+
+title: ikeFodder2
+tags:
+colorID:
+position:
+---
+<<ikein commandObject>>
+Ike: You did a good piano.
+Ike: Nice.
+Ike: Now the next thing.
+<<ikeout commandObject>>
+<<sceneLoader commandObject brad1>>
+===
+
+title: bradFodder
+tags:
+colorID:
+position:
+---
+<<bradin commandObject>>
+Brad: READY FOR SOME SWEET-ASS PIng PONG MY DUDE!!!!!!!!
+BRAD: I'M SO EXCITED EVEN MY NAME IS CAPITALIZED!!!
+<<bradout commandObject>>
+<<sceneLoader commandObject howToPingPong>>
+===
+
+title: bradFodder2
+tags:
+colorID:
+position:
+---
+<<bradin commandObject>>
+Brad: It's like before, but this time I'm an asshole.
+<<bradout commandObject>>
+<<sceneLoader commandObject laura1>>
+===
+
+title: lauraFodder
+tags:
+colorID:
+position:
+---
+<<laurain commandObject>>
+Laura: I heard a good song recently...
+Laura: How did it go again?
+Laura: Giving it up for the dingle
+Laura: Giving it up for the dingy dingy dingle
+<<lauraout commandObject>>
+<<sceneLoader commandObject lauraHowTo>>
+===
+
+title: lauraFodder2
+tags:
+colorID:
+position:
+---
+<<laurain commandObject>>
+Laura: Motherfucking Jesse Eisenberg Jesus Christ fuck dude motherfuckin Facebook movie bullshit Jesus can you fucking believe this shit
+<<ikein commandObject>>
+Ike: I have no idea what we're talking about right now.
+<<laurain commandObject>>
+Laura: God damn created Facebook then fucking lawyers and shit right fucking Winklevoss twins god damn rowing the boat 
+Laura: fuck yo shit I can't even fucking believe this shit have you seen this shit fuck I just watched this shit fuck Jesse Eisenberg man
+<<ikein commandObject>>
+Ike: Laura, you're scaring me.
+<<laurain commandObject>>
+Laura: Motherfucking Spider-man Spider-man you put in the time fuck put in the time motherfucking built shit with this bare hands fucking best friend shit Jesse Eisenberg
+Laura: I'm very tired
+<<lauraout commandObject>>
+<<sceneLoader commandObject theEnd>>
+===

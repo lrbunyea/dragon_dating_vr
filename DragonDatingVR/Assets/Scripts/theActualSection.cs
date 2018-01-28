@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class theActualSection : MonoBehaviour {
 
@@ -15,6 +16,7 @@ public class theActualSection : MonoBehaviour {
     Vector2 thirdNote;
     Vector2 fourthNote;
     AudioSource theAudio;
+    
 
 
     // Use this for initialization
@@ -709,6 +711,11 @@ public class theActualSection : MonoBehaviour {
                 Instantiate(note3, thirdNote, Quaternion.identity);
                 //Debug.Log("would spawn");
                 numNotes += 1;
+            }
+
+            else if ((rhythmTimer > 48) && numNotes == 106)
+            {
+                SceneManager.LoadScene("ikeGarage2");
             }
         }
     }

@@ -6,5 +6,38 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/rhythmScene.unity
+    path: Assets/Scenes/ikeGarage1.unity
+    guid: ff9923ce1d0b8e642a327b856ae6adbf
+  - enabled: 1
+    path: Assets/Scenes/rhythmScene.unity
     guid: e7f03232c6bc03e4aac1080adde1bc1f
+  - enabled: 1
+    path: Assets/Scenes/rhythmHowTo.unity
+    guid: 3038727f6ab331d47a82f7072bbf1e74
+  - enabled: 1
+    path: Assets/Scenes/rhythmFail.unity
+    guid: 154ac76aa2b8ce7468a69822a9274cfe
+  - enabled: 1
+    path: Assets/Scenes/ikeGarage2.unity
+    guid: b51fcf424fee3d54292ab3170867f58e
+  - enabled: 1
+    path: Assets/Scenes/howToPingPong.unity
+    guid: 2706fc405357535429acba8bec691fae
+  - enabled: 1
+    path: Assets/Scenes/brad1.unity
+    guid: 639fa92fd03a2c94f9a59a60f62cb3ac
+  - enabled: 1
+    path: Assets/Scenes/BradMiniGame.unity
+    guid: 517031d97b83bbc4791f55166e609ff1
+  - enabled: 1
+    path: Assets/Scenes/laura1.unity
+    guid: e2df5578143c03141bcfea9eaef12725
+  - enabled: 1
+    path: Assets/Scenes/LauraMiniGame.unity
+    guid: 03e6557936bd7554cb684547dc8169e1
+  - enabled: 1
+    path: Assets/Scenes/lauraHowTo.unity
+    guid: 213c978fc8aff204cb82233c632c0661
+  - enabled: 1
+    path: Assets/Scenes/theEnd.unity
+    guid: 7ca4692c0d06c4f4fbfc97e24a7e8c55

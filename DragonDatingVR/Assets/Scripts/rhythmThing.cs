@@ -60,7 +60,7 @@ public class rhythmThing : MonoBehaviour {
         healthSlider.value = currentPower;
         if (healthSlider.value <= 0)
        {
-            SceneManager.LoadScene("rhythmScene");
+            SceneManager.LoadScene("rhythmFail");
         }
     }
 

@@ -10,6 +10,7 @@ public class yarnCommands : MonoBehaviour {
     public GameObject ike;
     private GameObject ike2;
     public Canvas theCanvas;
+    public Text theText;
     public GameObject laura;
     private GameObject laura2;
     public GameObject brad;
@@ -23,6 +24,12 @@ public class yarnCommands : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    [YarnCommand("sceneLoader")]
+    public void sceneLoader(string theScene)
+    {
+        SceneManager.LoadScene(theScene);
+    }
 
     [YarnCommand("ikein")]
     public void ikein()
@@ -62,6 +69,11 @@ public class yarnCommands : MonoBehaviour {
     public void lauraout()
     {
         Destroy(laura2);
+    }
+
+    public void dotheQuit()
+    {
+        Application.Quit();
     }
     [YarnCommand("bradin")]
     public void bradin()
