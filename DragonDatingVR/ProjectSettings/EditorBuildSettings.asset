@@ -44,3 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/theEnd.unity
     guid: 7ca4692c0d06c4f4fbfc97e24a7e8c55
+  - enabled: 1
+    path: Assets/Scenes/brad2.unity
+    guid: 7054aa62c15fe594ca7fd76a768612c7
+  - enabled: 1
+    path: Assets/Scenes/laura2.unity
+    guid: 140a3f2064e7464479f4c3b561c0449c

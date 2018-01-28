@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class YouMissed : MonoBehaviour {
     public int numMisses;
@@ -14,7 +15,7 @@ public class YouMissed : MonoBehaviour {
     {
         if (numMisses == 2)
         {
-            Debug.Log("This is finished, boyo");
+            SceneManager.LoadScene("brad2");
         }
         Destroy(other.gameObject);
         numMisses++;

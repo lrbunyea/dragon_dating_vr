@@ -911,7 +911,7 @@ MonoBehaviour:
   overrideLanguage: 10
   variableStorage: {fileID: 1033643292}
   dialogueUI: {fileID: 1033643293}
-  startNode: ikeFodder
+  startNode: ike1
   startAutomatically: 1
   automaticCommands: 1
 --- !u!4 &1033643295

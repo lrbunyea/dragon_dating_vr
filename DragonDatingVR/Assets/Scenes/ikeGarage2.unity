@@ -608,7 +608,7 @@ MonoBehaviour:
   overrideLanguage: 10
   variableStorage: {fileID: 973990509}
   dialogueUI: {fileID: 973990510}
-  startNode: ikeFodder2
+  startNode: Ike2
   startAutomatically: 1
   automaticCommands: 1
 --- !u!4 &973990512
@@ -1259,6 +1259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ike: {fileID: 1776066810973748, guid: ba18d6f9d32cf2c49bf7ace61ebb38be, type: 2}
   theCanvas: {fileID: 1369695334}
+  theText: {fileID: 0}
   laura: {fileID: 1249969114472248, guid: 5e5c0384e59271a4bbaaed04dda59bb8, type: 2}
   brad: {fileID: 1510769787316168, guid: cebb98e276d8be8428dbe2fb418830f9, type: 2}
 --- !u!114 &1924120236

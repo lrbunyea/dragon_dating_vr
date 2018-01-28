@@ -1056,7 +1056,7 @@ MonoBehaviour:
   overrideLanguage: 10
   variableStorage: {fileID: 1619152903}
   dialogueUI: {fileID: 1619152902}
-  startNode: lauraFodder2
+  startNode: Laura2
   startAutomatically: 1
   automaticCommands: 1
 --- !u!4 &1619152905

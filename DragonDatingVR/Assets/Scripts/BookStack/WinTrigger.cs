@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinTrigger : MonoBehaviour {
 
@@ -9,7 +10,7 @@ public class WinTrigger : MonoBehaviour {
     {
         if (other.gameObject.tag == "StackedBook")
         {
-            Debug.Log("Hey, you did the thing.");
+            SceneManager.LoadScene("laura2");
         }
     }
 }

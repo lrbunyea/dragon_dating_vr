@@ -398,7 +398,7 @@ MonoBehaviour:
   overrideLanguage: 10
   variableStorage: {fileID: 314024186}
   dialogueUI: {fileID: 314024187}
-  startNode: bradFodder2
+  startNode: Brad2
   startAutomatically: 1
   automaticCommands: 1
 --- !u!4 &314024189

@@ -1,0 +1,315 @@
+title: ike1
+tags:
+colorID:
+position:
+---
+The sun glints off of your scales. The pavement beneath you radiates with the heat of the day. 
+Your head is throbbing and your left eye is stuck shut with sleep.
+What are your preffered pronouns?
+[[He/him/his|Boy]]
+[[She/her/hers|Girl]]
+[[They/them/theirs|NB]]
+===
+
+title: Boy
+tags:
+colorID:
+position:
+---
+<<set $boy to true>>
+<<set $girl to false>>
+Your pronouns are he/him/his!
+[[Continue.|ContinueIke1]]
+
+===
+
+title: Girl
+tags:
+colorID:
+position:
+---
+<<set $boy to false>>
+<<set $girl to true>>
+Your pronouns are she/her/hers!
+[[Continue.|ContinueIke1]]
+===
+
+title: NB
+tags:
+colorID:
+position:
+---
+<<set $boy to false>>
+<<set $girl to false>>
+Your pronouns are they/them/theirs!
+[[Continue.|ContinueIke1]]
+===
+
+title: ContinueIke1
+tags:
+colorID:
+position:
+---
+<<ikein commandObject>>
+Ike: What the heck? You're still out here?!
+You: Uh...?
+Ike: We threw a ripper last night. You took a shot from Brad's running shoe.
+You smack your lips together and cought on the back of your tongue is the taste of a black althletic sock.
+You: Disgusting.
+Ike: Yeah. It really was. Anyways, it's 3:00PM and time for band practice.
+You: It's already 3:00PM??? Oh my god, Laura is going to falcon punch me into another dimension.
+You check your phone. You have seven unread text messages. One unheard voice message.
+Text Message: I'm here!... Thirty minutes early. Sorry.
+Text Message: I've been pacing outside your door for exactly six minutes and forty nine seconds.
+Text Message: I could have plucked out every single one of my eyebrow hairs by now.
+Text Message: What even is eyebrow hair???
+Text Message: If you were here you would be able to come up with some crazy definition.
+Text Message: We were supposed to STUDY. Studying is a sacred act.
+Text Message: I'm starting to worry. Don't make me call the town police, the state police, the federal government AND your Mom.
+Voice Message: Hey! I know that I sent you an actual barrage of text messages.
+Voice Message: I just took my blood pressure with my mobile pump and it's VERY high. I better go home and practice the breathing exercises that my therapist taught me.
+Voice Message: I hope you're okay and that you didn't ditch me.
+You: Wow, I went from not feeling guilty to feeling guilty very quickly.
+Ike: Sit down at that keyboard and press some keys to make pretty noises, you nerd.
+[[Take Ike's advice. Laura is just like this.|IkeAdvice]]
+[[Call Laura. She should know that you're not dead after all.|CallLaura]]
+===
+
+title: IkeAdvice
+tags:
+colorID:
+position:
+---
+Ike: I meant after you called Laura back.
+[[Call Laura, you dingus.|CallLaura]]
+===
+
+title: CallLaura
+tags:
+colorID:
+position:
+---
+You: Hey! I'm so sorry about earlier.
+<<if $girl is true>>
+	Laura: You are totally unforgiven. I spent all day wondering, "Where is he? What basement is he curled in with a scar above the spot where his kidneys should be?"
+	You feel a pang of dread deep in your stomach and it makes you feel sick. Laura just called you a boy.
+<<endif>>
+
+<<if $boy is false and $girl is false>>
+	Laura: You are totally unforgiven. I spent all day wondering, "Where is he? What basement is he curled in with a scar above the spot where his kidneys should be?"
+	You feel a pang of dread deep in your stomach and it makes you feel sick. Laura just called you a boy.
+<<endif>>
+
+<<if $boy is true>>
+	Laura: You are totally unforgiven. I spent all day wondering, "Where is she? What basement is she curled in with a scar above the spot where her kidneys should be?"
+	You feel a pang of dread deep in your stomach and it makes you feel sick. Laura just called you a girl.
+<<endif>>
+
+You feel like you could rip every single cale off of your body. When will you be able to be transparent?
+You: Hah... My kidneys are thankfully still in my body.
+Laura: Well, maybe we can just meet up tomorrow to go over our notes.
+You: Don't you mean your notes?
+Laura: You are hopeless.
+You: I know.
+[[Now go jam with your bud.|PlayWithIke]]
+===
+
+title: PlayWithIke
+tags:
+colorID:
+position:
+---
+You sit down in a green, plastic lawn chair in front of an electric keyboard. The soft, dim glow of the lights on the top panel are familiar to you.
+The middle C key is well worn from hours of practice.
+Ike: Alright, let's jam on that new riff you've been working on. What do you think you're gunna call it?
+<<if $girl is true>>
+	You: How about... "Girl Insides?"
+<<endif>>
+
+<<if $boy is false and $girl is false>>
+	You: How about... "Neutral Insides?"
+<<endif>>
+
+<<if $boy is true>>
+	You: How about... "Boy Insides?"
+<<endif>>
+
+Ike: I'm into it. Kick it off, loser.
+<<ikeout commandObject>>
+<<sceneLoader commandObject rhythmHowTo>>
+===
+
+title: Ike2
+tags:
+colorID:
+position:
+---
+<<ikein commandObject>>
+Playing tunes with Ike can usually leave you with a huge grin on your face. Today is different. Your fingers didn't quite dance across the keys with the same life. The same vibrance.
+Ike: Hey, those jams were... loose. What's up with you?
+You hate answering questions like that from Ike.
+You: I guess I'm just in a funk. I think I'm going to go home.
+Ike: Yeah, nice try. Spill it.
+You: You're putting me in a really awkward place right now.
+Ike: If you really wanna keep quiet, I get it. I'm all ears when you're ready. Holes in em' and all.
+You turn around and start walking back towards the street. Before you know it, you spin around to face Ike again.
+You: I think I'm trans, Ike. I'm just so uncomfortable in my scales. I'm so scared of what that means. Does it mean that my friends will stop accepting me? 
+You: I don't even have the courage to schedule my own medical appointments.
+You: I mean, how am I supposed to change the gender marker on my drivers license?
+You: How do I tell my parents?
+Ike: I think it's weirder that you poor milk in a bowl before you pour the cereal.
+You: ... Shut up.
+Ike wraps you up in one of those signature suffocating embraces.
+Ike: Text me tomorrow, dumb bean. I think Brad was looking for someone to play ping pong with when he left this morning. Why don't you go and kick his ass?
+You: Yeah, okay... That might be fun.
+<<ikeout commandObject>>
+<<sceneLoader commandObject brad1>>
+===
+
+title: Brad1
+tags:
+colorID:
+position:
+---
+You walk up to Brad's door. You can hear crashing and thumping coming from inside the house.
+His intensity be very startling. The door flies open and he poses for you in the archway.
+<<bradin commandObject>>
+You: Hey, Brad. What's the haps?
+Brad: I'm smacking the CRAP out of some ping pong balls!!!
+You: Need someone to hit them back?
+Brad: I guess. Just don't cry if one of them hits you.
+You: Brad... They're ping pong balls. Made of air and thin plastic.
+Brad: WHATEVER.
+You follow Brad down to his basement where he keeps his most prized possession. An eight year old ping pong table adorned with countless scuffs and scratches.
+Before you know it, Brad is chucking ping pong ball after ping pong ball at you with his bare hands!
+<<bradout commandObject>>
+<<sceneLoader commandObject howToPingPong>>
+===
+
+title: Brad2
+tags:
+colorID:
+position:
+---
+<<bradin commandObject>>
+Brad: HAH! I beat you!!! I knew that you sucked at this!
+You: Um??? You threw the balls at me??? You didn't even use a paddle.
+Brad: WHATEVER. Ike told me that you had some "exciting news?"
+You feel empowered from your conversation earlier with Ike. Why not take steps towards being more open with all of your friends?
+You: Oh yeah, um... So, I've been thinking lately and I discovered something about myself. I'm trans. It actually feels really good to say out loud.
+<<if $girl is true>>
+	Brad: Wait, so, you're a boy who's pretending to be a girl?
+	You: What? No... That's not what it means to be trans at all. I AM a girl.
+	Brad: You're just confused. Do you really want people to think you're a freak?
+<<endif>>
+
+<<if $boy is false and $girl is false>>
+	Brad: Wait, so, you're a boy who's pretending to be a girl?
+	You: No, first of all... That's not what it means to be trans. I'm nonbinary. I don't really identify with being a man or a woman.
+	Brad: What? That isn't even a real thing. You can only be a male or a female.
+<<endif>>
+
+<<if $boy is true>>
+	Brad: Wait, so, you're a boy who's pretending to be a girl?
+	You: What? No... That's not what it means to be trans at all. I AM a boy.
+	Brad: You're just confused. Do you really want people to think you're a freak?
+<<endif>>
+
+You: I'm just going to go home.
+<<bradout commandObject>>
+Before Brad can respond you hurry up the basement staircase. Your cheeks are bright red and they're streaked with hot, wet tears.
+You are embarrassed, angry, and ashamed.
+You walk all the way home with a tight chest and your eyes on the sidewalk.
+<<sceneLoader commandObject laura1>>
+===
+
+title: Laura1
+tags:
+colorID:
+position:
+---
+You take photo albums from your childhood and lay them out on your desk.
+<<if $girl is true>>
+	The pages are blue with peeling monster truck and baseball stickers.
+<<endif>>
+
+<<if $boy is false and $girl is false>>
+	The pages are blue with peeling monster truck and baseball stickers.
+<<endif>>
+
+<<if $boy is true>>
+	The pages are pink with peeling flower and miscellaneous makeup stickers.
+<<endif>>
+With every page that you turn, you fail to see any reflection of yourself. You thrash them onto the floor with a swipe of your forearm.
+You go to bed... But you don't sleep.
+You spend the entire next morning vaccuuming the dust out of your carpet and arranging your socks by color.
+Laura can't seem to work in an environment that isn't sterile. You also feel like garbage for sleeping through your plans with her the previous day.
+Your phone vibrates in your pocket.
+Text Message: I'm outside! You better not be drooling in Ike's driveway.
+You hurry over to the door because you don't want to make her wait. However, it's already flung wide open before you get there.
+<<laurain commandObject>>
+Laura struts past you with a stack of books that grazes the top of the door frame.
+Laura: Okay, so, we've already lost a whole day of academic preparation thanks to your drunken exploits.
+You: Yeah... I feel really bad about that. I'm a trash monster.
+<<if $girl is true>>
+	A genuine king of the compost pit.
+<<endif>>
+
+<<if $boy is false and $girl is false>>
+	A genuine king of the compost pit.
+<<endif>>
+
+<<if $boy is true>>
+	A genuine queen of the compost pit.
+<<endif>>
+There it is again. The familiar taste of bile in the back of your throat. She was just going along with your joke, but you still feel the urge to vomit.
+Laura: You look really pale. Are you sure that you're fully recovered from a night of debauchery?
+You: Oh, hah, yeah. Um, what are we supposed to know for this test?
+Laura: Well, lucky for you, I printed out an extra study guide.
+Laura: Mr. Crowley wants us to know all of the major events that occured in Ancient Egypt during the Eleventh Dynasty.
+Laura: Now... Let me see if I can find the right textbook...
+Laura begins tossing books behind her with assiduous fervor. If she's not careful, she could damage one! You spring to your feet and try to catch as many as possible.
+<<lauraout commandObject>>
+<<sceneLoader commandObject lauraHowTo>>
+===
+
+title: Laura2
+tags:
+colorID:
+position:
+---
+<<laurain commandObject>>
+Laura: Oh! I finally found the right one!
+You: Thank god! You nearly killed me in the process!
+Laura: Oh, stop your whining and sit down with me. What should we start with first?
+-> Whatever you think is most important.
+	Laura turns the pages and recites the facts she has already jotted down on flashcards. Her concise sentences keep sailing right over your head.
+	Laura: It's too bad that King Tut isn't going to be on this exam... He's fascinating! Don't you think so?
+	You: ...
+	Laura: Are you even listening?
+	You: I'm sorry, I'm just tired.
+	Laura: Your face says something more.
+-> At the beginning. That makes sense, right?
+	Laura: A clinical approach! Let's begin, shall we?
+	Even though Laura's enthusiasm is charming and contagious, you can't parse her sentences.
+	Your brain is foggy.
+	Brad's words seem to play on a loop.
+	Laura: Hey, are you paying attention?
+	You: I'm sorry, I'm just tired.
+	Laura: Your face says something more.
+-> I don't even know if I'll be able to focus.
+	What's on your mind?
+You want to tell Laura. You also don't want her to reject you.
+You: ... You won't think I'm weird?
+Laura: We're friends with Ike who has a flamingo stuffed animal collection and size double zero gauges.
+You: You make a good case.
+You: I think I'm trans. Wait, no, I don't think I'm trans, I know that I'm trans.
+Laura: What disturbs me is that you thought I would think differently of you.
+You: Brad didn't react very... uh... well.
+Laura: I will literally tear his biceps off of his arms and beat him with them.
+You: Woah.
+Laura: I'm serious about my friends, okay?
+Laura decides that she can spare one more study day. She calls Tiki Port, your favorite restaurant, and orders in.
+She rents The Band of Justice Bros on demand, even though she despises superhero films. She knows you love them.
+She calls Ike and the three of you sit on the sofa in comfortable silence.
+===
