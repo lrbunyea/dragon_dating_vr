@@ -6,7 +6,7 @@ public class InstantiateBooks : MonoBehaviour {
 
     public Transform book;
     private Transform newThing;
-    int count = 0;
+    float timeLeft = 2f;
     GameObject obj;
 
 	// Use this for initialization
@@ -16,12 +16,12 @@ public class InstantiateBooks : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (count == 120)
+        timeLeft -= Time.deltaTime;
+        if (timeLeft < 0)
         {
-            count = 0;
             newThing = Instantiate(book, new Vector3(Random.Range(-7, 7), 5.5f), Quaternion.identity);
             newThing.GetComponent<Rigidbody2D>().velocity.Set(0f, -.5f);
+            timeLeft = 2f;
         }
-        count++;
 	}
 }
