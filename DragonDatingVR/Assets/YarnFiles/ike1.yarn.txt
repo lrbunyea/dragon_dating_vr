@@ -54,7 +54,7 @@ position:
 Ike: What the heck? You're still out here?!
 You: Uh...?
 Ike: We threw a ripper last night. You took a shot from Brad's running shoe.
-You smack your lips together and cought on the back of your tongue is the taste of a black althletic sock.
+You smack your lips together and caught on the back of your tongue is the taste of a black althletic sock.
 You: Disgusting.
 Ike: Yeah. It really was. Anyways, it's 3:00PM and time for band practice.
 You: It's already 3:00PM??? Oh my god, Laura is going to falcon punch me into another dimension.
@@ -105,7 +105,7 @@ You: Hey! I'm so sorry about earlier.
 	You feel a pang of dread deep in your stomach and it makes you feel sick. Laura just called you a girl.
 <<endif>>
 
-You feel like you could rip every single cale off of your body. When will you be able to be transparent?
+You feel like you could rip every single scale off of your body. When will you be able to be transparent?
 You: Hah... My kidneys are thankfully still in my body.
 Laura: Well, maybe we can just meet up tomorrow to go over our notes.
 You: Don't you mean your notes?
@@ -312,4 +312,6 @@ Laura: I'm serious about my friends, okay?
 Laura decides that she can spare one more study day. She calls Tiki Port, your favorite restaurant, and orders in.
 She rents The Band of Justice Bros on demand, even though she despises superhero films. She knows you love them.
 She calls Ike and the three of you sit on the sofa in comfortable silence.
+<<lauraout commandObject>>
+<<sceneLoader commandObject theEnd>>
 ===
