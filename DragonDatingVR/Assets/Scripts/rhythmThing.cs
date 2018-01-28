@@ -17,7 +17,7 @@ public class rhythmThing : MonoBehaviour {
     void Start () {
         isCollided = false;
         currentPower = 10;
-        //healthSlider.value = currentPower;
+        healthSlider.value = currentPower;
         
     }
 	
@@ -57,11 +57,11 @@ public class rhythmThing : MonoBehaviour {
             }
 
         }
-    //    healthSlider.value = currentPower;
-    //    if (healthSlider.value <= 0)
-   //     {
-     //       SceneManager.LoadScene("RhythmRestart");
-    //    }
+        healthSlider.value = currentPower;
+        if (healthSlider.value <= 0)
+       {
+            SceneManager.LoadScene("rhythmScene");
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)

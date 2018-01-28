@@ -22,7 +22,7 @@ public class noteScript : MonoBehaviour {
         if (col.gameObject.tag == "rhythm")
         {
             Destroy(this.gameObject);
-           // rhythm1.currentPower -= 7;
+            rhythmThing.currentPower -= 7;
         }
 
     }
