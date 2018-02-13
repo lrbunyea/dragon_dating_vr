@@ -15,12 +15,14 @@ public class yarnCommands : MonoBehaviour {
     private GameObject laura2;
     public GameObject brad;
     private GameObject brad2;
+    private Transform thepos;
 
     private bool boy;
     private bool girl;
 
     // Use this for initialization
     void Start () {
+       // thepos = new Vector2(-10.6f, 226.8501f)
     }
 	
 	// Update is called once per frame
@@ -37,7 +39,9 @@ public class yarnCommands : MonoBehaviour {
     [YarnCommand("ikein")]
     public void ikein()
     {
+        
         ike2 = Instantiate(ike);
+        ike2.transform.position = new Vector2(-10.6f, 240.8501f);
         if (brad2 != null)
         {
             Destroy(brad2);
@@ -66,6 +70,7 @@ public class yarnCommands : MonoBehaviour {
             Destroy(ike2);
         }
         laura2 = Instantiate(laura);
+        laura2.transform.position = new Vector2(-10.6f, 240.8501f);
         laura2.transform.SetParent(theCanvas.transform, false);
     }
     [YarnCommand("lauraout")]
@@ -91,6 +96,7 @@ public class yarnCommands : MonoBehaviour {
             Destroy(ike2);
         }
         brad2 = Instantiate(brad);
+        brad2.transform.position = new Vector2(-10.6f, 240.8501f);
         brad2.transform.SetParent(theCanvas.transform, false);
     }
     [YarnCommand("bradout")]
