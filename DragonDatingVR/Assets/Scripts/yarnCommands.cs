@@ -16,6 +16,9 @@ public class yarnCommands : MonoBehaviour {
     public GameObject brad;
     private GameObject brad2;
 
+    private bool boy;
+    private bool girl;
+
     // Use this for initialization
     void Start () {
     }
@@ -94,5 +97,38 @@ public class yarnCommands : MonoBehaviour {
     public void bradout()
     {
         Destroy(brad2);
+    }
+
+    [YarnCommand("setboy")]
+    public void setboy()
+    {
+        boy = true;
+        girl = false;
+    }
+
+    [YarnCommand("setgirl")]
+    public void setgirl()
+    {
+        boy = false;
+        girl = true;
+    }
+
+    [YarnCommand("setnb")]
+    public void setnb()
+    {
+        boy = false;
+        girl = false;
+    }
+
+    [YarnCommand("getboy")]
+    public bool getboy()
+    {
+        return boy;
+    }
+
+    [YarnCommand("getgirl")]
+    public bool getgirl()
+    {
+        return girl;
     }
 }

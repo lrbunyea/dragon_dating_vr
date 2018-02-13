@@ -16,8 +16,7 @@ tags:
 colorID:
 position:
 ---
-<<set $boy to true>>
-<<set $girl to false>>
+<<setboy commandObject>>
 Your pronouns are he/him/his!
 [[Continue.|ContinueIke1]]
 
@@ -28,8 +27,7 @@ tags:
 colorID:
 position:
 ---
-<<set $boy to false>>
-<<set $girl to true>>
+<<setgirl commandObject>>
 Your pronouns are she/her/hers!
 [[Continue.|ContinueIke1]]
 ===
@@ -39,8 +37,7 @@ tags:
 colorID:
 position:
 ---
-<<set $boy to false>>
-<<set $girl to false>>
+<<setnb commandObject>>
 Your pronouns are they/them/theirs!
 [[Continue.|ContinueIke1]]
 ===
@@ -90,17 +87,17 @@ colorID:
 position:
 ---
 You: Hey! I'm so sorry about earlier.
-<<if $girl is true and $boy is false>>
+<<if visited("Girl")>>
 	Laura: You are totally unforgiven. I spent all day wondering, "Where is he? What basement is he curled in with a scar above the spot where his kidneys should be?"
 	You feel a pang of dread deep in your stomach and it makes you feel sick. Laura just called you a boy.
 <<endif>>
 
-<<if $boy is false and $girl is false>>
+<<if visited("NB")>>
 	Laura: You are totally unforgiven. I spent all day wondering, "Where is he? What basement is he curled in with a scar above the spot where his kidneys should be?"
 	You feel a pang of dread deep in your stomach and it makes you feel sick. Laura just called you a boy.
 <<endif>>
 
-<<if $boy is true and $girl is false>>
+<<if visited("Boy")>>
 	Laura: You are totally unforgiven. I spent all day wondering, "Where is she? What basement is she curled in with a scar above the spot where her kidneys should be?"
 	You feel a pang of dread deep in your stomach and it makes you feel sick. Laura just called you a girl.
 <<endif>>
@@ -122,15 +119,15 @@ position:
 You sit down in a green, plastic lawn chair in front of an electric keyboard. The soft, dim glow of the lights on the top panel are familiar to you.
 The middle C key is well worn from hours of practice.
 Ike: Alright, let's jam on that new riff you've been working on. What do you think you're gunna call it?
-<<if $girl is true and $boy is false>>
+<<if visited("Girl")>>
 	You: How about... "Girl Insides?"
 <<endif>>
 
-<<if $boy is false and $girl is false>>
+<<if visited("NB")>>
 	You: How about... "Neutral Insides?"
 <<endif>>
 
-<<if $boy is true and $girl is false>>
+<<if visited("Boy")>>
 	You: How about... "Boy Insides?"
 <<endif>>
 
@@ -197,19 +194,19 @@ You: Um??? You threw the balls at me??? You didn't even use a paddle.
 Brad: WHATEVER. Ike told me that you had some "exciting news?"
 You feel empowered from your conversation earlier with Ike. Why not take steps towards being more open with all of your friends?
 You: Oh yeah, um... So, I've been thinking lately and I discovered something about myself. I'm trans. It actually feels really good to say out loud.
-<<if $girl is true and $boy is false>>
+<<if visited("Girl")>>
 	Brad: Wait, so, you're a boy who's pretending to be a girl?
 	You: What? No... That's not what it means to be trans at all. I AM a girl.
 	Brad: You're just confused. Do you really want people to think you're a freak?
 <<endif>>
 
-<<if $boy is false and $girl is false>>
+<<if visited("NB")>>
 	Brad: Wait, so, you're a boy who's pretending to be a girl?
 	You: No, first of all... That's not what it means to be trans. I'm nonbinary. I don't really identify with being a man or a woman.
 	Brad: What? That isn't even a real thing. You can only be a male or a female.
 <<endif>>
 
-<<if $boy is true and $girl is false>>
+<<if visited("Boy")>>
 	Brad: Wait, so, you're a boy who's pretending to be a girl?
 	You: What? No... That's not what it means to be trans at all. I AM a boy.
 	Brad: You're just confused. Do you really want people to think you're a freak?
@@ -229,15 +226,15 @@ colorID:
 position:
 ---
 You take photo albums from your childhood and lay them out on your desk.
-<<if $girl is true and $boy is false>>
+<<if visited("Girl")>>
 	The pages are blue with peeling monster truck and baseball stickers.
 <<endif>>
 
-<<if $boy is false and $girl is false>>
+<<if visited("NB")>>
 	The pages are blue with peeling monster truck and baseball stickers.
 <<endif>>
 
-<<if $boy is true and $girl is false>>
+<<if visited("Boy")>>
 	The pages are pink with peeling flower and miscellaneous makeup stickers.
 <<endif>>
 With every page that you turn, you fail to see any reflection of yourself. You thrash them onto the floor with a swipe of your forearm.
@@ -251,15 +248,15 @@ You hurry over to the door because you don't want to make her wait. However, it'
 Laura struts past you with a stack of books that grazes the top of the door frame.
 Laura: Okay, so, we've already lost a whole day of academic preparation thanks to your drunken exploits.
 You: Yeah... I feel really bad about that. I'm a trash monster.
-<<if $girl is true and $boy is false>>
+<<if visited("Girl")>>
 	A genuine king of the compost pit.
 <<endif>>
 
-<<if $boy is false and $girl is false>>
+<<if visited("NB")>>
 	A genuine king of the compost pit.
 <<endif>>
 
-<<if $boy is true and $girl is false>>
+<<if visited("Boy")>>
 	A genuine queen of the compost pit.
 <<endif>>
 There it is again. The familiar taste of bile in the back of your throat. She was just going along with your joke, but you still feel the urge to vomit.
